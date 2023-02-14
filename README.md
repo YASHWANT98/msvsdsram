@@ -48,13 +48,14 @@ SRAM Read Operation:
 
 Static Noise Margin: 
 
-Hold SNM
+Hold SNM:
 
 ![](images/Hold_SNM_Ciruit.png)
 
 ![](images/Hold_SNM.png)
 
-Read SNM 
+
+Read SNM: 
 
 ![](images/Read_SNM_Circuit.png)
 
