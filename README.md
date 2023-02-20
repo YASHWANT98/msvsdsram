@@ -60,3 +60,9 @@ Read SNM:
 ![](images/Read_SNM_Circuit.png)
 
 ![](images/Read_SNM.png)
+
+SNM<sub>Low</sub>  = 0.243V 
+
+SNM<sub>High</sub> = 0.222V
+
+Read SNM = min(SNM<sub>Low</sub> , SNM<sub>High</sub> ) = 0.222V
