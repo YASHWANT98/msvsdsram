@@ -61,8 +61,48 @@ Read SNM:
 
 ![](images/Read_SNM.png)
 
+![](images/Read_SNM_Calculation.png)
+
 SNM<sub>Low</sub>  = 0.243V 
 
 SNM<sub>High</sub> = 0.222V
 
 Read SNM = min(SNM<sub>Low</sub> , SNM<sub>High</sub> ) = 0.222V
+
+N Curve :
+
+![](images/Ncurve_Circuit.png)
+
+![](images/Ncurve_plot.png)
+
+SVNM = 572.3mV
+
+SINM = 129.41uA
+
+WTV = 889.9mV
+
+WTI = -58.17uA
+
+### Precharge Circuit 
+
+
+![](images/Precharge_Circuit.png)
+
+
+![](images/Precharge_plot.png)
+
+
+### Sense Amplifier 
+
+
+![](images/Sense_Amplifier_Circuit.png)
+
+
+![](images/Sense_Amplifier_plot.png)
+
+
+### Tristate Buffer
+
+![](images/Tristate_buffer.png)
+
+![](images/Tristate_buffer_plot.png)
