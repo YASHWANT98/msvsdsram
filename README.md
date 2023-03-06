@@ -12,8 +12,27 @@
 
 ## Memory Design Complier
 
+ Legato Memory Solution is the integrated solution for memory design, verification, and characterization from Cadence. It provides one platform for all memory design, verification, and characterization needs.
+ 
+ It is a solution that consists of three environment cockpits: cell design, array and compiler verification, and memory characterization1. With the cell design cockpit, we can design the bitcell and get Monte Carlo variation analysis1. With the array and compiler verification cockpit, we can verify the memory array and compiler functionality and performance1. With the memory characterization cockpit, we can generate accurate memory models and reports. The Legato Memory Solution uses common engines such as Spectre, Liberate, and Voltus to ensure consistency and accuracy across the design flow
+ 
+ ![](images/Legato_memory_Solution.png)
+ 
+Virtuoso Liberate MX is a memory characterization solution from Cadence that extends the standard cell and I/O library characterization capabilities to cover larger macro blocks such as memory (SRAM, ROM etc) and custom cores
+
 ![](images/LIberate_degin_compiler.png)
-![](images/Legato_memory_Solution.png)
+
+The inputs taken by Virtuoso Liberate MX are:
+
+* The memory netlist, which is the SPICE description of the memory circuit.
+* The memory configuration file, which is the XML file that specifies the memory architecture, modes, features, and pins.
+* The characterization setup file, which is the TCL file that specifies the characterization parameters, such as the models, views, corners, conditions, and options.
+* The characterization library, which is the library that contains the standard cell and I/O models that are used by the memory circuit.
+
+The Virtuoso Liberate MX characterizing tool can output 
+
+* library files that contain the timing, noise, and power models of memory and custom cores1. These library files can be used for various design and analysis tools. * * The tool can also output variation models and library validation reports
+
 ![](images/Liberate_MX_server.png)
 
 ## Prelayout Simulation
