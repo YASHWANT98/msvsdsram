@@ -187,7 +187,7 @@ The bit-lines are pre-charged to Vdd during the read operation. If a write opera
 
 Schematic of 1-bit SRAM cell:
 
-![](images/1_bit_SRAM_cell_schematic.png)
+![](images/1_bit_SRAM_cell_schamatic.png)
 
 Layout of 1-bit SRAM cell:
 
