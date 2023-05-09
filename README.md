@@ -168,3 +168,48 @@ Shown below is the schematic and simulation of a Tri-State Buffer.
 ![](images/Tristate_buffer.png)
 
 ![](images/Tristate_buffer_plot.png)
+
+### D flipflop
+
+Schematic of D-flipflop:
+
+![](images/D_flipflop_schematic.png)
+
+### Write Driver
+
+The bit-lines are pre-charged to Vdd during the read operation. If a write operation occurs, one of the bit-lines should driven back to low logic before enabling access transistors. Write drivers are used for this purpose.
+
+![](images/Write_driver_schematic.png)
+
+### 1-bit SRAM Cell 
+
+1-bit SRAM comprises of a 6T SRAM cell, a sense amplifier, a write driver and a pre-charge circuit.
+
+Schematic of 1-bit SRAM cell:
+
+![](images/1_bit_SRAM_cell_schematic.png)
+
+Layout of 1-bit SRAM cell:
+
+![](images/1_bit_SRAM_cell_layout.png)
+
+Read Operation: 
+
+![](images/Write_Operation.png)
+
+Write Operation: 
+
+![](images/Write_Operation.png)
+
+## Contribution
+
+* Yashwant Moses, MS IIIT Bangalore
+* Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+## Acknowledgement 
+
+* Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+* Shon Taware (https://github.com/ShonTaware/SRAM_SKY130)
+
+
+
