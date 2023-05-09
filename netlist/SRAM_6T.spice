@@ -1,0 +1,40 @@
+// Generated for: spectre
+// Generated on: May 10 08:36:05 2023
+// Design library name: SCL180_Design
+// Design cell name: SRAM_6T
+// Design view name: schematic
+simulator lang=spectre
+global 0
+
+// Library name: SCL180_Design
+// Cell name: SRAM_6T
+// View name: schematic
+M6 (net2 net4 0 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M3 (Qbar WL BLBAR 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M2 (BL WL Q 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 m=1
+M1 (Q Qbar 0 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 m=1
+M0 (Qbar Q 0 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 m=1
+M7 (net2 net4 net1 net1) p18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+M5 (Q Qbar VDD VDD) p18 w=0.84 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M4 (Qbar Q VDD VDD) p18 w=0.84 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+V3 (net1 0) vsource dc=1.8 type=dc
+V4 (VDD 0) vsource dc=1.8 type=dc
+V5 (net3 0) vsource type=pulse val0=0 val1=1.8 period=10n width=5n
+V1 (Q 0) vsource type=pulse val0=0 val1=1.8 period=10n width=5n
+V2 (WL 0) vsource type=pulse val0=0 val1=1.8 period=40n width=19n
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

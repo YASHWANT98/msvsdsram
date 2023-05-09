@@ -1,0 +1,37 @@
+// Generated for: spectre
+// Generated on: May 10 08:44:39 2023
+// Design library name: SCL180_Design
+// Design cell name: Tristate_buffer
+// Design view name: schematic
+simulator lang=spectre
+global 0
+
+// Library name: SCL180_Design
+// Cell name: Tristate_buffer
+// View name: schematic
+M2 (net3 net1 0 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M1 (Out EN net3 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M0 (net1 IN 0 0) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 m=1
+M5 (net2 net1 VDD VDD) p18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+M4 (Out EN_bar net2 VDD) p18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+M3 (net1 IN VDD VDD) p18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+V2 (IN 0) vsource type=pulse val0=0 val1=1.8 period=10n width=5n
+V1 (EN 0) vsource type=pulse val0=0 val1=1.8 period=40n width=20n
+V0 (EN_bar 0) vsource type=pulse val0=1.8 val1=0 period=40n width=20n
+V3 (VDD 0) vsource dc=1.8 type=dc
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

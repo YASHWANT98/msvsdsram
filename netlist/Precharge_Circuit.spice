@@ -1,0 +1,29 @@
+// Generated for: spectre
+// Generated on: May 10 08:41:01 2023
+// Design library name: SCL180_Design
+// Design cell name: Precharge_Circuit
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/home/yashwantmoses/Desktop/scl_pdk_v2/design_kit/models/hspice/ts18sl_scl.lib" section=tt_18
+
+// Library name: SCL180_Design
+// Cell name: Precharge_Circuit
+// View name: schematic
+M1 (BL Precharge VDD VDD) p18 w=0.84 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+M0 (BLbar Precharge VDD VDD) p18 w=0.84 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+V0 (VDD 0) vsource dc=1.8 type=dc
+V1 (Precharge 0) vsource type=pulse val0=0 val1=1.8 period=10n width=5n
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
